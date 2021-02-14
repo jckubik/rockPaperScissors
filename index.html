@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class='wrapper'>
+    <div class='choiceDiv'>
+      <h2 id='title'><span id='rock' class='title'>Rock</span> <span id='paper' class='title'>Paper</span> <span
+          id='scissors'>Scissors</span></h2>
+      <h4 class='chooseYourWeapon'>Choose Your Weapon</h4>
+      <div class='buttonDiv'>
+        <button class='button' value='rock'>Rock</button>
+        <button class='button' value='paper'>Paper</button>
+        <button class='button' value='scissors'>Scissors</button>
+      </div>
+    </div>
+    <div class='fightDiv'>
+      <button class='button' value='fight'>Fight!</button>
+    </div>
+    <div class='winnerDiv'>
+      <p class='playerDisplay choice'>? ? ?</p>
+      <div class='displayWinner'>
+        <h4 id='winnerHeading'></h4>
+      </div>
+      <p class='computerDisplay choice'>? ? ?</p>
+    </div>
+  </div>
+
+  <script src='./rockPaperScissors.js'></script>
+</body>
+
+</html>
