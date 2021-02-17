@@ -3,12 +3,14 @@ const buttons = document.querySelectorAll(`.button`);
 const playerDisplay = document.querySelector(`.playerDisplay`);
 const computerDisplay = document.querySelector(`.computerDisplay`);
 const winnerHeader = document.querySelector(`#winnerHeading`);
+const soundButton = document.querySelector(`#sound`);
+const backgroundMusic = new Audio(`Interstellar%20Odyssey.ogg`);
 let playerChoice;
 let playerHasChosen = false;
 let computerChoice;
+let soundOn = false;
 
 function playBackgroundMusic() {
-  const backgroundMusic = new Audio(`file:///Users/Jacob/Downloads/Interstellar%20Odyssey.ogg`);
   backgroundMusic.play();
 }
 
@@ -68,6 +70,12 @@ function handleButtonClick(e) {
     return pcChoice();
   } else if (options.includes(e.target.value)) {
     handlePlayerChoice(e);
+  } else {
+    soundOn = !soundOn;
+    console.log(soundOn);
+    if (soundOn) {
+      backgroundMusic.play();
+    }
   }
 }
 
@@ -77,4 +85,4 @@ buttons.forEach(button => button.addEventListener(`click`, handleButtonClick));
 
 // TODO - Add mute button for sound
 // Have muted by default
-playBackgroundMusic();
+// playBackgroundMusic();

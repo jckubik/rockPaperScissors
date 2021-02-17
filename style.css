@@ -40,7 +40,8 @@ h5 {font-size: 1.25rem;}
 small, .text_small {font-size: 0.8rem;}
 
 .wrapper {
-  width: 933px;
+  max-width: 933px;
+  min-width: 933px;
   height: 15em;
   margin: 4em 1em 3em 1em;
   padding: 3em 0 3em 0;
@@ -54,10 +55,6 @@ small, .text_small {font-size: 0.8rem;}
   border-right: .3em darkgray outset;
   border-bottom: .3em darkgray outset;
   box-shadow: .5em .5em .5em .2em #222;
-}
-
-.title #rock{
-
 }
 
 .winnerDiv {
@@ -143,6 +140,10 @@ small, .text_small {font-size: 0.8rem;}
   background-color: rgb(186, 149, 100);
 }
 
+#sound {
+  position: absolute;
+  bottom: 0;
+}
 #title {
   position: absolute;
   left: 12%;
