@@ -1,4 +1,5 @@
 // Select the buttons
+const wrapper = document.querySelector(`.wrapper`);
 const buttons = document.querySelectorAll(`.button`);
 const playerDisplay = document.querySelector(`.playerDisplay`);
 const computerDisplay = document.querySelector(`.computerDisplay`);
@@ -9,6 +10,8 @@ let playerChoice;
 let playerHasChosen = false;
 let computerChoice;
 let soundOn = false;
+
+wrapper.appendChild(backgroundMusic);
 
 function playBackgroundMusic() {
   backgroundMusic.play();
@@ -86,4 +89,3 @@ backgroundMusic.addEventListener(`canplaythrough`, event => backgroundMusic.play
 
 // TODO - Add mute button for sound
 // Have muted by default
-// playBackgroundMusic();
