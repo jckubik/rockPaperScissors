@@ -77,7 +77,11 @@ function handleButtonClick(e) {
     soundOn = !soundOn;
     console.log(soundOn);
     if (soundOn) {
+      backgroundMusic.pause();
+      backgroundMusic.volume = 0.5;
       backgroundMusic.play();
+    } else {
+      backgroundMusic.pause();
     }
   }
 }
