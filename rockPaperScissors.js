@@ -5,7 +5,7 @@ const playerDisplay = document.querySelector(`.playerDisplay`);
 const computerDisplay = document.querySelector(`.computerDisplay`);
 const winnerHeader = document.querySelector(`#winnerHeading`);
 const soundButton = document.querySelector(`#sound`);
-const backgroundMusic = new Audio(`Interstellar%20Odyssey.ogg`);
+const backgroundMusic = document.getElementById(`backgroundMusic`);
 let playerChoice;
 let playerHasChosen = false;
 let computerChoice;
