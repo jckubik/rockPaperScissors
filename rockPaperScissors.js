@@ -74,13 +74,13 @@ function handleButtonClick(e) {
     soundOn = !soundOn;
     console.log(soundOn);
     if (soundOn) {
-      soundButton.style.innerText = `Mute`;
+      soundButton.textContent = `Mute`;
       console.log(`Playing!`);
       backgroundMusic.pause();
       backgroundMusic.play();
       backgroundMusic.volume = 0.5;
     } else {
-      soundButton.style.innerText = `Sound On`;
+      soundButton.textContent = `Sound On`;
       backgroundMusic.pause();
       console.log(`Muting!`);
     }
