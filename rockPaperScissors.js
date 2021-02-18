@@ -82,7 +82,7 @@ function handleButtonClick(e) {
       backgroundMusic.volume = 0.5;
       backgroundMusic.play();
     } else {
-      soundButton.style.textContent = `UnMute`;
+      soundButton.style.textContent = `Sound On`;
       backgroundMusic.pause();
     }
   }
