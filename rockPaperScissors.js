@@ -13,9 +13,6 @@ let soundOn = false;
 
 wrapper.appendChild(backgroundMusic);
 
-function playBackgroundMusic() {
-  backgroundMusic.play();
-}
 
 function handlePlayerChoice(e) {
   computerDisplay.innerHTML = `? ? ?`;
@@ -78,12 +75,14 @@ function handleButtonClick(e) {
     console.log(soundOn);
     if (soundOn) {
       soundButton.style.textContent = `Mute`;
+      console.log(`Playing!`);
       backgroundMusic.pause();
-      backgroundMusic.volume = 0.5;
       backgroundMusic.play();
+      backgroundMusic.volume = 0.5;
     } else {
       soundButton.style.textContent = `Sound On`;
       backgroundMusic.pause();
+      console.log(`Muting!`);
     }
   }
 }
@@ -91,7 +90,7 @@ function handleButtonClick(e) {
 
 // Add event listner to see if the button was clicked
 buttons.forEach(button => button.addEventListener(`click`, handleButtonClick));
-backgroundMusic.addEventListener(`canplaythrough`, event => backgroundMusic.play());
+// backgroundMusic.addEventListener(`canplaythrough`, event => backgroundMusic.play());
 
 // TODO - Add mute button for sound
 // Have muted by default
