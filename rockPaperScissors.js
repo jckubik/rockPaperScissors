@@ -91,7 +91,7 @@ function handleButtonClick(e) {
 
 // Add event listner to see if the button was clicked
 buttons.forEach(button => button.addEventListener(`click`, handleButtonClick));
-// backgroundMusic.addEventListener(`canplaythrough`, event => backgroundMusic.play());
+backgroundMusic.addEventListener(`canplaythrough`, event => backgroundMusic.play());
 
 // TODO - Add mute button for sound
 // Have muted by default
